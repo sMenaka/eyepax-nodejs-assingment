@@ -62,7 +62,7 @@ class Slide {
         for (let i = 1; i < 11; i++) {
             await new this.slide({
                 _id:shortid.generate(),
-                image: "localhost:3600/file/test_"+i+".jpg",
+                image: "http://localhost:3600/file/test_"+i+".jpg",
                 title:"Strong mask"+i,
                 subTitle:"Secondary text"+i
             }).save()

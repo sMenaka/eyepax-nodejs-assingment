@@ -55,7 +55,7 @@ app.get('/', (req: express.Request, res: express.Response) => {
 server.listen(port, () => {
 
     // This functions only need at initially. this is use for initial data assign to database.
-    // slideServiceImpl.initSlides()
+    slideServiceImpl.initSlides()
     console.log("If you need to get initial data please uncomment line 58 in app.js")
 
     routes.forEach((route: CommonRoutes) => {
